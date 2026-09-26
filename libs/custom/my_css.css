@@ -14,6 +14,45 @@ h4 {
 .main-description .ai {
   font-size: 22px;
   margin-top: 5px; }
+.notice {
+  display: flex;
+  align-items: flex-start;
+  padding: 1.4rem 1.8rem;
+  margin-bottom: 2.5rem;
+  background: #F2FAFD;
+  border: 1px solid #CDEEF8;
+  border-left: 4px solid #1EAEDB;
+  border-radius: 6px; }
+.notice p {
+  margin-bottom: 0; }
+.notice .notice-title {
+  margin-bottom: .4rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  color: #0B7FA6; }
+.notice-dot {
+  position: relative;
+  flex: none;
+  width: 10px;
+  height: 10px;
+  margin: .6rem 1.4rem 0 0;
+  border-radius: 50%;
+  background: #1EAEDB; }
+.notice-dot::after {
+  content: "";
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  border-radius: 50%;
+  background: #1EAEDB;
+  animation: notice-pulse 2s ease-out infinite; }
+@keyframes notice-pulse {
+  from { transform: scale(1); opacity: .6; }
+  to { transform: scale(2.8); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .notice-dot::after {
+    animation: none; } }
 .research-areas {
   list-style: disc outside;
   padding-left: 2rem; }
