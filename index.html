@@ -127,22 +127,25 @@
 
   <ul class="research-areas">
     <li>
-      <b>Efficient LLMs and Agents</b>: reducing the inference cost of LLMs and agents without sacrificing performance, from KV cache reuse to adaptive reasoning effort selection.<br>
+      <b>Efficient LLMs and Agents</b>: reducing the inference cost of LLMs and agents without sacrificing performance, spanning KV cache reuse, adaptive reasoning effort selection, and agent memory compaction.<br>
       <i>Works:</i>
       <a href="https://arxiv.org/pdf/2502.16002" target="_blank">KVLink</a> (NeurIPS'25),
-      <a href="https://arxiv.org/pdf/2603.07915" target="_blank">Ares</a> (NeurIPS'26)
+      <a href="https://arxiv.org/pdf/2603.07915" target="_blank">Ares</a> (NeurIPS'26),
+      <a href="https://arxiv.org/pdf/2609.40118" target="_blank">ReCAP</a> (preprint)
     </li>
     <li>
-      <b>Agent Planning and Self-Evolution</b>: enabling agents to solve complex, long-horizon tasks through dynamic planning, and to continually improve by evolving reusable skills.<br>
+      <b>Agent Planning and Self-Evolution</b>: enabling agents to solve complex, long-horizon tasks through dynamic planning, and to continually improve by evolving reusable skills and agent harnesses.<br>
       <i>Works:</i>
       <a href="https://arxiv.org/pdf/2510.06587" target="_blank">WebDART</a> (ACL'26 Findings),
-      <a href="https://arxiv.org/pdf/2606.03143" target="_blank">FederatedSkill</a> (preprint)
+      <a href="https://arxiv.org/pdf/2606.03143" target="_blank">FederatedSkill</a> (preprint),
+      <a href="https://arxiv.org/pdf/2609.40169" target="_blank">ScholarEvolve</a> (preprint)
     </li>
     <li>
-      <b>Evaluation of LLM Agents</b>: building benchmarks that test agents and LLM judges in realistic scenarios, such as memory in multi-party conversations and compliance checking in dialogue systems.<br>
+      <b>Evaluation of LLM and Multimodal Agents</b>: building benchmarks that test agents and LLM judges in realistic scenarios, such as memory in multi-party conversations, compliance checking in dialogue systems, and multimodal agents auditing interactive 3D worlds.<br>
       <i>Works:</i>
       <a href="https://arxiv.org/pdf/2605.14498" target="_blank">GroupMemBench</a> (NeurIPS'26 E&amp;D Track),
-      <a href="https://arxiv.org/pdf/2604.12312" target="_blank">CompliBench</a> (preprint)
+      <a href="https://arxiv.org/pdf/2604.12312" target="_blank">CompliBench</a> (preprint),
+      <a href="https://arxiv.org/pdf/2609.40325" target="_blank">WorldAuditBench</a> (preprint)
     </li>
   </ul>
 
@@ -160,6 +163,7 @@
 <div class="docs-section" id="news">
   <h4>News</h4>
   <ul class="news">
+    <li><span class="news-date">Sep 2026</span><span>Released three new papers: <a href="https://arxiv.org/pdf/2609.40169" target="_blank">ScholarEvolve</a> on research-guided agent harness evolution, <a href="https://arxiv.org/pdf/2609.40118" target="_blank">ReCAP</a> on memory compaction for LLM agents, and <a href="https://arxiv.org/pdf/2609.40325" target="_blank">WorldAuditBench</a> on 3D world auditing with multimodal agents.</span></li>
     <li><span class="news-date">Sep 2026</span><span><a href="https://arxiv.org/pdf/2603.07915" target="_blank">Ares</a> is accepted to <b>NeurIPS 2026</b>, and <a href="https://arxiv.org/pdf/2605.14498" target="_blank">GroupMemBench</a> is accepted to the <b>NeurIPS 2026 Evaluations &amp; Datasets Track</b>.</span></li>
     <li><span class="news-date">Jun 2026</span><span>Started a research internship at <b>Microsoft</b> in Redmond, WA.</span></li>
     <li><span class="news-date">Jun 2026</span><span>Released <a href="https://arxiv.org/pdf/2606.03143" target="_blank">FederatedSkill</a>, a federated learning framework for agentic skill evolution.</span></li>
@@ -318,6 +322,45 @@
   <h4>Publications</h4>
 
   <p class="pub-note"><sup>&#8225;</sup> indicates authors with equal contribution/advising.</p>
+
+  <div class="paper">
+    <a class="paper-thumb" href="https://arxiv.org/pdf/2609.40169" target="_blank"><img src="/assets/papers/scholarevolve.png" alt="ScholarEvolve overview figure" loading="lazy"></a>
+    <div class="paper-info">
+      <p class="title"><b>Learning from Research: Toward Lifelong Agent Harness Evolution</b></p>
+      <p><b>Jingbo Yang</b>, Kwei-Herng Lai, Xiaowen Wang, Yaar Harari, Evgeniy Gabrilovich, Shiyu Chang</p>
+      <p class="venue"><span class="badge badge-preprint">Preprint</span> <i>arXiv 2609.40169</i></p>
+      <div class="paper-buttons">
+        <a class="button" href="https://arxiv.org/pdf/2609.40169" target="_blank">Paper</a>
+        <a class="button" href="https://github.com/UCSB-NLP-Chang/ScholarEvolve" target="_blank">Code</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="paper">
+    <a class="paper-thumb" href="https://arxiv.org/pdf/2609.40118" target="_blank"><img src="/assets/papers/recap.png" alt="ReCAP overview figure" loading="lazy"></a>
+    <div class="paper-info">
+      <p class="title"><b>Persistent Context Graphs for Efficient Memory Compaction in LLM Agents</b></p>
+      <p><b>Jingbo Yang</b>, Kwei-Herng Lai, Xiaowen Wang, Zhaoxuan Tan, Pei Zhou, Mengting Wan, Yaar Harari, Evgeniy Gabrilovich, Shiyu Chang</p>
+      <p class="venue"><span class="badge badge-preprint">Preprint</span> <i>arXiv 2609.40118</i></p>
+      <div class="paper-buttons">
+        <a class="button" href="https://arxiv.org/pdf/2609.40118" target="_blank">Paper</a>
+        <a class="button" href="https://github.com/UCSB-NLP-Chang/ReCAP" target="_blank">Code</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="paper">
+    <a class="paper-thumb" href="https://arxiv.org/pdf/2609.40325" target="_blank"><img src="/assets/papers/worldauditbench.png" alt="WorldAuditBench overview figure" loading="lazy"></a>
+    <div class="paper-info">
+      <p class="title"><b>WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents</b></p>
+      <p>Ziyan Jiang<sup>&#8225;</sup>, <b>Jingbo Yang</b><sup>&#8225;</sup>, Jiabao Ji<sup>&#8225;</sup>, Yujian Liu, Qiucheng Wu, Tommi Jaakkola, Yang Zhang, Shiyu Chang</p>
+      <p class="venue"><span class="badge badge-preprint">Preprint</span> <i>arXiv 2609.40325</i></p>
+      <div class="paper-buttons">
+        <a class="button" href="https://arxiv.org/pdf/2609.40325" target="_blank">Paper</a>
+        <a class="button" href="https://ucsb-nlp-chang.github.io/WorldAuditBench/" target="_blank">Project</a>
+      </div>
+    </div>
+  </div>
 
   <div class="paper">
     <a class="paper-thumb" href="https://arxiv.org/pdf/2606.03143" target="_blank"><img src="/assets/papers/federatedskill.png" alt="FederatedSkill overview figure" loading="lazy"></a>
@@ -696,7 +739,7 @@
           Jingbo Yang
         </div>
         <div class="four columns">
-          Last updated on September 2026
+          Last updated on October 2026
         </div>
         <div class="four columns">
           <!-- <span onclick="window.open('https://twitter.com/CodeTerminator')" style="cursor: pointer">
