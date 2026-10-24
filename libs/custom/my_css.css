@@ -80,6 +80,16 @@ h4 {
 .pub-note {
   color: #777;
   font-size: 1.3rem; }
+.pub-group {
+  margin: 3.2rem 0 1.8rem;
+  padding-bottom: .6rem;
+  border-bottom: 1px solid #eee;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: .15rem;
+  text-transform: uppercase;
+  color: #555; }
 .paper {
   display: flex;
   align-items: flex-start;
